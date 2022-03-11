@@ -1,0 +1,369 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+body{
+    background-color: white;
+}
+
+header{
+    position: fixed;
+    top: 0; left:0; right:0;
+    background: #ffffffb4;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+header .logo{
+    font-weight:lighter;
+    font-size: 25px;
+    color: #333;
+}
+header .navbar ul{
+list-style: none;
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+/*color es para las letras */ 
+header .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    display: block;
+}
+/* aqui es para el color de contorno */ 
+header .navbar ul li a:hover{
+background: rgb(88, 87, 87);
+color: #ffffff;
+}
+
+#menu-bar{
+    display: none;
+}
+header label{
+    font-size: 20px;
+    color:#333;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:991px){
+    header{
+        padding: 20px;
+    }
+    header label{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%; left:0; right: 0;
+        background: #2a1f1fa8;
+        border-top: solid rgb(0,0,0,.1);
+        display: none;
+    }
+    header .navbar ul li{
+        width: 100px;
+        
+    } 
+
+    header .navbar ul li ul{
+        position: relative;
+        width :100px;
+    }
+    header .navbar ul li ul li{
+        background: rgba(202, 195, 195, 0.685);
+    }
+    header .navbar ul li ul li ul{
+        width: 100%;
+        left: 0;
+    }
+    #menu-bar:checked ~.navbar{
+        display: initial;
+    }
+}
+
+.fondo{
+    width: 500px;
+    height: 750px;
+}
+
+.izqsup{
+    width: 630px;
+    height: 750px;
+    top: 0px;
+    left: 0px;
+    position:absolute;
+    text-align: center;
+}
+
+.image1{
+    width: 630px;
+    height: 750px;
+    top: 0px;
+    right: 0px;
+    position:absolute;
+    text-align: center;
+}
+
+.cdroctral{
+    width: 700px;
+    height: 100px;
+    background: rgba(180, 172, 172, 0.692);
+    top: 600px;
+    left: 150px;
+    position:absolute;
+    /*text-align: left;*/
+}
+
+.imagenesdelogo{
+    width: 1250px;
+    height: 200px;
+    top: 750px;
+    left: 0px;
+    position:absolute;
+    text-align: left;
+}
+
+.imagenesdelogocen{
+    position:relative;
+    text-align: center;
+}
+
+.cdroctralinf{
+    width: 600px;
+    height: 300px;
+    top: 1000px;
+    left: 50;
+    position:absolute;
+    /*text-align: left;*/
+}
+
+.cdroctral1{
+    width: 260px;
+    height: 325px;
+    background: rgba(180, 172, 172, 0.692);
+    top: 1325px;
+    left: 50;
+    position:absolute;
+    /*text-align: left;*/
+}
+
+.cdroctral2{
+    width: 260px;
+    height: 325px;
+    background: rgba(180, 172, 172, 0.692);
+    top: 1325px;
+    left: 340;
+    position:absolute;
+    /*text-align: left;*/
+}
+.cdroctral3{
+    width: 260px;
+    height: 325px;
+    background: rgba(180, 172, 172, 0.692);
+    top: 1325px;
+    left: 630;
+    position:absolute;
+    /*text-align: left;*/
+}
+.cdroctral4{
+    width: 260px;
+    height: 325px;
+    background: rgba(180, 172, 172, 0.692);
+    top: 1325px;
+    left: 925px;
+    position:absolute;
+    /*text-align: left;*/
+}
+
+.image2{
+    width: 540px;
+    height: 635px;
+    top: 1700px;
+    left: 0px;
+    position:absolute;
+    text-align: center;
+}
+
+.cdroctralder{
+    width: 600px;
+    height: 250px;
+    top: 1700px;
+    right: 75px;
+    position:absolute;
+    /*text-align: left;*/
+}
+.cdroctralder1{
+    width: 600px;
+    height: 75px;
+    background: rgba(180, 172, 172, 0.692);
+    top: 1970px;
+    right: 75px;
+    position:absolute;
+    /*text-align: left;*/
+}
+.cdroctralder2{
+    width: 600px;
+    height: 75px;
+    background: rgba(180, 172, 172, 0.692);
+    top: 2050px;
+    right: 75px;
+    position:absolute;
+    /*text-align: left;*/
+}
+.cdroctralder3{
+    width: 600px;
+    height: 75px;
+    background: rgb(180, 172, 172, 0.692);
+    top: 2130px;
+    right: 75px;
+    position:absolute;
+    /*text-align: left;*/
+}
+.cdroctralder4{
+    width: 600px;
+    height: 75px;
+    background: rgb(180, 172, 172, 0.692);
+    top: 2210px;
+    right: 75px;
+    position:absolute;
+    /*text-align: left;*/
+}
+.cdroctralder5{
+    width: 600px;
+    height: 75px;
+    background: rgb(180, 172, 172, 0.692);
+    top: 2290px;
+    right: 75px;
+    position:absolute;
+    /*text-align: left;*/
+}
+.image3{
+    width: 540px;
+    height: 635px;
+    top: 2500px;
+    right: 0px;
+    position:absolute;
+    text-align: center;
+}
+
+.cdroinfizq{
+    width: 600px;
+    height: 175px;
+    top: 2400px;
+    left: 70px;
+    position:absolute;
+    /*text-align: left;*/
+}
+
+.cdroinfizq1{
+    width: 300px;
+    height: 300px;
+    background: rgb(180, 172, 172, 0.692);
+    top: 2600px;
+    left: 70px;
+    position:absolute;
+    /*text-align: left;*/
+}
+
+.cdroinfizq2{
+    width: 300px;
+    height: 300px;
+    background: rgb(180, 172, 172, 0.692);
+    top: 2600px;
+    left: 375px;
+    position:absolute;
+    /*text-align: left;*/
+}
+.cdroinfizq3{
+    width: 300px;
+    height: 300px;
+    background: rgb(180, 172, 172, 0.692);
+    top: 2905px;
+    left: 70px;
+    position:absolute;
+    /*text-align: left;*/
+}
+.cdroinfizq4{
+    width: 300px;
+    height: 300px;
+    background: rgb(180, 172, 172, 0.692);
+    top: 2905px;
+    left: 375px;
+    position:absolute;
+    /*text-align: left;*/
+}
+
+.cdrofinizq{
+    width: 1263px;
+    height: 200px;
+    background: rgb(180, 172, 172, 0.692);
+    top: 3305px;
+    left: 0px;
+    position:absolute;
+    /*text-align: left;*/
+}
+.cdrofinizq1{
+    width: 250px;
+    height: 100px;
+    top: 3320px;
+    left: 40px;
+    position:absolute;
+    /*text-align: left;*/
+}
+.cdrofinizq2{
+    width: 150px;
+    height: 125px;
+    top: 3320px;
+    right: 40px;
+    position:absolute;
+    /*text-align: left;*/
+}
+.cdrofinizq3{
+    width: 150px;
+    height: 125px;
+    top: 3320px;
+    right: 200px;
+    position:absolute;
+    /*text-align: left;*/
+}
+.cdrofinizq4{
+    width: 150px;
+    height: 125px;
+    top: 3320px;
+    right: 360px;
+    position:absolute;
+    /*text-align: left;*/
+}
+.cdrofinizq5{
+    width: 300px;
+    height: 25px;
+    top: 3475px;
+    right: 40px;
+    position:absolute;
+    /*text-align: left;*/
+}
+.cdrofinizq6{
+    width: 300px;
+    height: 25px;
+    top: 3475px;
+    left: 40px;
+    position:absolute;
+    /*text-align: left;*/
+}
+.cdrofinizq7{
+    width: 300px;
+    height: 300px;
+    top: 2905px;
+    left: 375px;
+    position:absolute;
+    /*text-align: left;*/
+}
